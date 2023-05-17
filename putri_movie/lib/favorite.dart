@@ -19,26 +19,21 @@ class _FavoritePagesState extends State<FavoritePages> {
         title: 'END GAME',
         actor: 'Tom Hiddleston, Chris Hemsworth, Robert Downey Jr',
         description:
-            ' Thor mengisi masa pensiunnya dengan mengembara mencari kedamaian serta berusaha mengembalikan bentuk tubuhnya. Namun, di tengah pengembaraannya Thor kembali diusik dengan kehadiran pembunuh antar galaxi Gorr the God Butcher yang membantai para Dewa.\nGorr the God Butcher memiliki tujuan untuk memusnahkan para Dewa. Menghadapi musuh yang sangat kuat tersebut Thor meminta bantuan King Valkyrie, Korg dan mantan pacarnya Jane Foster.\nBersama-sama, mereka memulai petualangan kosmik yang menegangkan untuk mengungkap dendam dari sang pembantai Dewa dan menghentikannya sebelum terlambat. Namun, yang cukup mengejutkan dalam kisah Thor kali ini, yakni palu ajaib palu ajaibnya, Mjolnir justru merespon kekuatan dan menghampiri Jane di tengah pertempuran.\nKembalinya Natalie Portman sebagai Jane Foster telah lama ditunggu-tunggu para penggemar series hero ini. Pasalnya, Jane tidak muncul lagi sejak putus dengan Thor.',
+            ' Avengers: End Game (2019) Film ini diumumkan pada bulan Oktober 2014 sebagai Avengers: Infinity War - Part 2. Russo bersaudara ditunjuk untuk mengarahkan pada bulan April 2015, dan pada bulan Mei, Markus dan McFeely dikontrak sebagai penulis naskah film tersebut. Pada bulan Juli 2016, Marvel menghapus judul, merujuknya hanya sebagai Untitled Avengers. Pembuatan film dimulai pada bulan Agustus 2017 di Pinewood Atlanta Studios di Fayette County, Georgia, mengambil gambar secara berurutan dengan Infinity War, dan berakhir pada Januari 2018. Pembuatan film tambahan dilakukan di wilayah Metro dan Pusat Kota Atlanta dan New York. Judul resmi terungkap pada Desember 2018. Dengan perkiraan anggaran 356 juta dolar, menjadikan film ini termahal ketiga yang pernah dibuat..',
       ),
       LastestMovieModels(
         images: 'assets/film_5.jpg',
         title: 'DOCTOR STANGE \nMULTIVERSE OF MADNESS',
         actor: 'Scott Rix, Elizabeth Olsen, Hank Pym',
-        description: ' Thor: Love And Thunder (2011)',
+        description:
+            ' Dr. Strange (Benedict Cumberbatch) mencoba mencari tahu siapa yang mengejar America Chavez (Xochitl Gomez), seorang gadis dengan kemampuan untuk melintasi multiverse. Untuk memecahkan masalah ini, Stephen Strange memutuskan meminta bantuan kepada penyihir yang paling kuat yang ia kenal, Wanda Maximoff (Elizabeth Olsen)',
       ),
       LastestMovieModels(
         images: 'assets/film_3.jpg',
         title: 'Avatar 2 The Way of Water',
-        actor: 'Tom Hiddleston, Chris Hemsworth, Robert Downey Jr',
-        description: ' Thor: Love And Thunder (2011)',
-      ),
-      LastestMovieModels(
-        images: 'assets/film_4.jpg',
-        title: 'END GAME',
-        actor: 'Tom Hiddleston, Chris Hemsworth, Robert Downey Jr',
+        actor: 'Jake Sully dan Neytiri (Zoe Saldana)',
         description:
-            'Thor mengisi masa pensiunnya dengan mengembara mencari kedamaian serta berusaha mengembalikan bentuk tubuhnya. Namun, di tengah pengembaraannya Thor kembali diusik dengan kehadiran pembunuh antar galaxi Gorr the God Butcher yang membantai para Dewa.\nGorr the God Butcher memiliki tujuan untuk memusnahkan para Dewa. Menghadapi musuh yang sangat kuat tersebut Thor meminta bantuan King Valkyrie, Korg dan mantan pacarnya Jane Foster.\nBersama-sama, mereka memulai petualangan kosmik yang menegangkan untuk mengungkap dendam dari sang pembantai Dewa dan menghentikannya sebelum terlambat. Namun, yang cukup mengejutkan dalam kisah Thor kali ini, yakni palu ajaib palu ajaibnya, Mjolnir justru merespon kekuatan dan menghampiri Jane di tengah pertempuran.\nKembalinya Natalie Portman sebagai Jane Foster telah lama ditunggu-tunggu para penggemar series hero ini. Pasalnya, Jane tidak muncul lagi sejak putus dengan Thor.',
+            'Film Avatar 2: The Way of Water mengisahkan sosok Jake Sully dengan pasangannya Neytiri tinggal bersama anak-anak mereka di tempat yang jauh dari Planet Pandora. Diceritakan bahwa mereka berjanji akan melakukan segala hal dan menghadapi segala rintangan untuk tetap bersama.. Akan tetapi, dikisahkan datanglah sebuah ancaman. Mereka harus memerangi kembalinya RDA.Hal tersebut membuat Jake Sully dan keluarganya harus kembali ke Planet Pandora. Dikisahkan pula bahwa terdapat klan baru serta tempat baru yang dekat dengan terumbu karang. ',
       ),
     ]);
     super.initState();
@@ -79,7 +74,7 @@ class _FavoritePagesState extends State<FavoritePages> {
       ),
     );
   }
- 
+
   Widget _cardMovieWidget(listMovie, index) {
     return Padding(
       padding: const EdgeInsets.only(left: 5, top: 10, bottom: 10),

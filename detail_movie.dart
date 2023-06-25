@@ -5,12 +5,20 @@ class DetailMoviePages extends StatefulWidget {
   final String title;
   final String actor;
   final String description;
+  final String genre;
+  final String sutradara;
+  final String durasi;
+  final String rating;
   const DetailMoviePages(
       {super.key,
       required this.images,
       required this.title,
       required this.actor,
-      required this.description});
+      required this.description,
+      required this.genre,
+      required this.durasi,
+      required this.sutradara,
+      required this.rating});
 
   @override
   State<DetailMoviePages> createState() => _DetailMoviePagesState();
@@ -21,7 +29,7 @@ class _DetailMoviePagesState extends State<DetailMoviePages> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent.withOpacity(0.1),
+        backgroundColor: Colors.blueGrey.withOpacity(0.1),
         title: Text(widget.title),
         centerTitle: true,
         elevation: 0,
@@ -102,6 +110,38 @@ class _DetailMoviePagesState extends State<DetailMoviePages> {
                             color: Colors.white,
                           ),
                           textAlign: TextAlign.justify,
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          'Durasi : (${widget.durasi})',
+                          style: const TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          'Sutradara : (${widget.sutradara})',
+                          style: const TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          'Genre : (${widget.genre})',
+                          style: const TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          'Rating : (${widget.rating})',
+                          style: const TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
                         ),
                       ],
                     ),

@@ -13,48 +13,70 @@ class _BerandaPagesState extends State<BerandaPages> {
   List<LastestMovieModels> _listLatestMovie = [];
   List<LastestMovieModels> _listFavoriteMovie = [];
 
+ @override
+  State<BerandaPages> createState() => _BerandaPagesState();
+}
+
+class _BerandaPagesState extends State<BerandaPages> {
+  final List<LastestMovieModels> _listLatestMovie = [];
+  final List<LastestMovieModels> _listFavoriteMovie = [];
+
   @override
   void initState() {
     _listLatestMovie.addAll([
       LastestMovieModels(
         images: 'assets/film_1.jpeg',
         title: 'Thor: Love And Thunder',
+        genre: 'Genre  : Animation, Adventure, Comedy',
+        durasi: 'Durasi  : 1 jam 49 menit',
+        sutradara: 'Sutradara  : Peter sohn',
+        rating: 'Rating usia  : Semua umur',
         actor: 'Tom Hiddleston, Chris Hemsworth, Robert Downey Jr',
         description:
             'Thor mengisi masa pensiunnya dengan mengembara mencari kedamaian serta berusaha mengembalikan bentuk tubuhnya. Namun, di tengah pengembaraannya Thor kembali diusik dengan kehadiran pembunuh antar galaxi Gorr the God Butcher yang membantai para Dewa.\nGorr the God Butcher memiliki tujuan untuk memusnahkan para Dewa. Menghadapi musuh yang sangat kuat tersebut Thor meminta bantuan King Valkyrie, Korg dan mantan pacarnya Jane Foster.\nBersama-sama, mereka memulai petualangan kosmik yang menegangkan untuk mengungkap dendam dari sang pembantai Dewa dan menghentikannya sebelum terlambat. Namun, yang cukup mengejutkan dalam kisah Thor kali ini, yakni palu ajaib palu ajaibnya, Mjolnir justru merespon kekuatan dan menghampiri Jane di tengah pertempuran.\nKembalinya Natalie Portman sebagai Jane Foster telah lama ditunggu-tunggu para penggemar series hero ini. Pasalnya, Jane tidak muncul lagi sejak putus dengan Thor.',
       ),
       LastestMovieModels(
         images: 'assets/film_2.jpg',
-        title: 'Ant-Man and the \nWasp: Quantumania',
+        title: 'Ant-Man',
+        genre: 'Genre  : Adventure, Action',
+        durasi: 'Durasi  : 2 jam 4 menit',
+        sutradara: 'Sutradara  : petyon reed',
+        rating: 'Rating usia  : 13 tahun',
         actor: 'Scott Rix, Elizabeth Olsen, Hank Pym',
-        description: ' Thor: Love And Thunder (2011)',
+        description: ' menjelajahi alam quantum tempat bertemu mahluk aneh',
       ),
       LastestMovieModels(
         images: 'assets/film_3.jpg',
         title: 'Avatar 2 The Way of Water',
+        genre: 'Genre  : Animation, Adventure, Comedy',
+        durasi: 'Durasi  : 1 jam 49 menit',
+        sutradara: 'Sutradara  : Peter sohn',
+        rating: 'Rating usia  : Semua umur',
         actor: 'Tom Hiddleston, Chris Hemsworth, Robert Downey Jr',
         description: ' Thor: Love And Thunder (2011)',
       ),
     ]);
     _listFavoriteMovie.addAll([
       LastestMovieModels(
-        images: 'assets/film_4.jpg',
-        title: 'END GAME',
-        actor: 'Tom Hiddleston, Chris Hemsworth, Robert Downey Jr',
-        description:
-            ' Thor mengisi masa pensiunnya dengan mengembara mencari kedamaian serta berusaha mengembalikan bentuk tubuhnya. Namun, di tengah pengembaraannya Thor kembali diusik dengan kehadiran pembunuh antar galaxi Gorr the God Butcher yang membantai para Dewa.\nGorr the God Butcher memiliki tujuan untuk memusnahkan para Dewa. Menghadapi musuh yang sangat kuat tersebut Thor meminta bantuan King Valkyrie, Korg dan mantan pacarnya Jane Foster.\nBersama-sama, mereka memulai petualangan kosmik yang menegangkan untuk mengungkap dendam dari sang pembantai Dewa dan menghentikannya sebelum terlambat. Namun, yang cukup mengejutkan dalam kisah Thor kali ini, yakni palu ajaib palu ajaibnya, Mjolnir justru merespon kekuatan dan menghampiri Jane di tengah pertempuran.\nKembalinya Natalie Portman sebagai Jane Foster telah lama ditunggu-tunggu para penggemar series hero ini. Pasalnya, Jane tidak muncul lagi sejak putus dengan Thor.',
-      ),
+          images: 'assets/film_4.jpg',
+          title: 'END GAME',
+          genre: 'Genre  : Scie-fi',
+          durasi: 'Durasi  : 3 jam 1 menit',
+          sutradara: 'Sutradara  : Anthony Russo',
+          rating: 'Rating usia  : Semua umur',
+          actor: 'Chris Hemsworth, Robert Downey',
+          description:
+              ' Melanjutkan Avenger Infinity war, Thanos berhasil mendapatkan semua Infinity stones'),
       LastestMovieModels(
         images: 'assets/film_5.jpg',
-        title: 'DOCTOR STANGE \nMULTIVERSE OF MADNESS',
+        title: 'DOCTOR STANGE',
+        genre: 'Genre  :  Adventure, Action',
+        durasi: 'Durasi  : 2 jam 6 menit',
+        sutradara: 'Sutradara  : Sam Raimi',
+        rating: 'Rating usia  : Semua umur',
         actor: 'Scott Rix, Elizabeth Olsen, Hank Pym',
-        description: ' Thor: Love And Thunder (2011)',
-      ),
-      LastestMovieModels(
-        images: 'assets/film_3.jpg',
-        title: 'Avatar 2 The Way of Water',
-        actor: 'Tom Hiddleston, Chris Hemsworth, Robert Downey Jr',
-        description: ' Thor: Love And Thunder (2011)',
+        description:
+            ' perjalanan ke tempat yg tidak di bersama Doctor Strange dengan bantuan sekutu mistis baik menghadapi musuh yang misterius',
       ),
     ]);
     super.initState();
@@ -92,12 +114,12 @@ class _BerandaPagesState extends State<BerandaPages> {
   }
 
   Widget _headerMovie() {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
+          children: [
             Text(
               'Welcome Putri',
               style: TextStyle(color: Colors.grey),
@@ -115,7 +137,7 @@ class _BerandaPagesState extends State<BerandaPages> {
             ),
           ],
         ),
-        const CircleAvatar(
+        CircleAvatar(
           backgroundColor: Colors.amber,
           backgroundImage: AssetImage('assets/profile.jpg'),
         )
@@ -177,6 +199,10 @@ class _BerandaPagesState extends State<BerandaPages> {
               actor: listMovie[index].actor,
               description: listMovie[index].description,
               images: listMovie[index].images,
+              genre: listMovie[index].genre,
+              sutradara: listMovie[index].sutradara,
+              durasi: listMovie[index].durasi,
+              rating: listMovie[index].rating,
             );
           },
         ));
@@ -201,7 +227,11 @@ class _BerandaPagesState extends State<BerandaPages> {
             ),
             Text(
               listMovie[index].title,
-              style: const TextStyle(color: Colors.white),
+              style: const TextStyle(color: Colors.yellow),
+            ),
+            Text(
+              listMovie[index].rating,
+              style: const TextStyle(color: Colors.yellow),
             )
           ],
         ),

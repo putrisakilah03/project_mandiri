@@ -20,12 +20,15 @@ class AccountPages extends StatelessWidget {
           Container(
             width: 300,
             decoration: BoxDecoration(
-              color: Colors.amber.withOpacity(0.4),
-              borderRadius: BorderRadius.circular(20),
-              boxShadow: [
-                BoxShadow(blurRadius: 5, color: Colors.black.withOpacity(0.4), spreadRadius: 4, offset: Offset(0.0, 0.2))
-              ]
-            ),
+                color: Colors.amber.withOpacity(0.4),
+                borderRadius: BorderRadius.circular(20),
+                boxShadow: [
+                  BoxShadow(
+                      blurRadius: 5,
+                      color: Colors.black.withOpacity(0.4),
+                      spreadRadius: 4,
+                      offset: const Offset(0.0, 0.2))
+                ]),
             child: Column(
               children: [
                 _widgetProfile('Nama', 'Putri Syakilah'),

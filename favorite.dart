@@ -5,7 +5,14 @@ import 'package:putri_movie/detail_movie.dart';
 class FavoritePages extends StatefulWidget {
   const FavoritePages({super.key});
 
- @override
+  @override
+  State<FavoritePages> createState() => _FavoritePagesState();
+}
+
+class _FavoritePagesState extends State<FavoritePages> {
+  List<LastestMovieModels> _listFavoriteMovie = [];
+
+  @override
   void initState() {
     _listFavoriteMovie.addAll([
       LastestMovieModels(
@@ -49,7 +56,8 @@ class FavoritePages extends StatefulWidget {
         sutradara: 'Sutradara  : Peter sohn',
         rating: 'Rating usia  : 17 tahun',
         actor: '(Paul Rudd, Evageline lilly)',
-        description:'Menjelajahi Alam quantum rempat mereka menemukan mahluk aneh',
+        description:
+            'Menjelajahi Alam quantum rempat mereka menemukan mahluk aneh',
       ),
       LastestMovieModels(
         images: 'assets/film_1.jpg',
@@ -59,7 +67,8 @@ class FavoritePages extends StatefulWidget {
         sutradara: 'Sutradara  : Sam Raimi',
         rating: 'Rating usia  : 13 tahun',
         actor: 'Scott Rix, Elizabeth Olsen, Hank Pym',
-        description: ' dengan bantuan mstis baik melintasi multiverse yang membahayakan untuk menghadapi musuh',
+        description:
+            ' dengan bantuan mstis baik melintasi multiverse yang membahayakan untuk menghadapi musuh',
       ),
     ]);
     super.initState();

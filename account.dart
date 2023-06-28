@@ -27,14 +27,14 @@ class AccountPages extends StatelessWidget {
                       blurRadius: 5,
                       color: Colors.black.withOpacity(0.4),
                       spreadRadius: 4,
-                      offset: const Offset(0.0, 0.2))
+                      offset: Offset(0.0, 0.2))
                 ]),
             child: Column(
               children: [
-                _widgetProfile('Nama', 'Putri Syakilah'),
-                _widgetProfile('Nim', 'Putri Syakilah'),
-                _widgetProfile('Handphone', 'Putri Syakilah'),
-                _widgetProfile('Alamat', 'Putri Syakilah'),
+                _widgetProfile('Nama', 'Putri Sakilah'),
+                _widgetProfile('Npm', '021200103'),
+                _widgetProfile('Handphone', '0895604274943'),
+                _widgetProfile('Alamat', 'Jl. Ratu Sianum no.54'),
               ],
             ),
           ),

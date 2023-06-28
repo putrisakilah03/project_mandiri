@@ -13,14 +13,6 @@ class _BerandaPagesState extends State<BerandaPages> {
   List<LastestMovieModels> _listLatestMovie = [];
   List<LastestMovieModels> _listFavoriteMovie = [];
 
- @override
-  State<BerandaPages> createState() => _BerandaPagesState();
-}
-
-class _BerandaPagesState extends State<BerandaPages> {
-  final List<LastestMovieModels> _listLatestMovie = [];
-  final List<LastestMovieModels> _listFavoriteMovie = [];
-
   @override
   void initState() {
     _listLatestMovie.addAll([
@@ -114,7 +106,7 @@ class _BerandaPagesState extends State<BerandaPages> {
   }
 
   Widget _headerMovie() {
-    return const Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Column(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:putri_movie/home.dart';
+import 'package:putri_movie/splashscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,9 +14,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(scaffoldBackgroundColor: Color.fromARGB(255, 46, 46, 46).withOpacity(0.5)),
-      home: const HomePages(),
-      
+      theme: ThemeData(
+          scaffoldBackgroundColor:
+              Color.fromARGB(255, 46, 46, 46).withOpacity(0.5)),
+      home: const SplashScreen(),
     );
   }
 }

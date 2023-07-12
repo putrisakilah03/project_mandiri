@@ -28,7 +28,7 @@ class AccountPages extends StatelessWidget {
             ),
             child: Column(
               children: [
-                _widgetProfile('Nama', 'Putri Syakilah'),
+                _widgetProfile('Nama', 'Putri Sakilah'),
                 _widgetProfile('Npm', '021200103'),
                 _widgetProfile('Handphone', '0895604274943'),
                 _widgetProfile('Alamat', 'Jl.Ratu Sianum'),

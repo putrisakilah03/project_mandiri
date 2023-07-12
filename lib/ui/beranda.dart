@@ -79,7 +79,7 @@ class _BerandaPagesState extends State<BerandaPages> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
             Text(
-              'Welcome Putri',
+              'Welcome',
               style: TextStyle(color: Colors.grey),
             ),
             SizedBox(
